@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="menu-content">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Categories</a></li>
+            </ul>
+            <img src="images/icon-menu-close.svg" alt="Close" class="close-btn" id="closeBtn">
+        </div>
+    </div>
+
+    <header>
+        <a href="#">
+            <img src="images/logo.svg" class="logo" alt="Logo">
+        </a>
+        <img src="images/icon-menu.svg" class="menu-icon" alt="Menu" id="menuToggle">
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <section id="section-1">
+                <img id="web-image" class="web-desktop" alt="Web for desktop">
+            </section>
+            
+            <div class="container-2">
+                <div class="box-2">
+                    <h1>The Bright Future of Web 3.0?</h1>
+                </div>
+                <div class="box-2">
+                    <p class="text-web-2">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+                    <button id="read-more">R E A D &nbsp; M O R E </button>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="text-container">
+                <h2>New</h2>
+                <h3><a href="#section-1">Hydrogen VS Electric Cars</a></h3>
+                <p class="text-web">Will hydrogen-fueled cars ever catch up to EVs?</p>
+                <h3><a href="#section-1">The Downsides of AI Artistry</a></h3>
+                <p class="text-web">What are the possible adverse effects of on-demand AI image generation?</p>
+                <h3><a href="#section-1">Is VC Funding Drying Up?</a></h3>
+                <p class="text-web">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-box">
+        <div class="container-3">
+            <div class="box-3">
+                <img src="images/image-retro-pcs.jpg" class="images-notices" alt="PC retro">
+            </div>
+            <div class="box-3">
+                <p class="number">01</p>
+                <a href="#section-2" class="notices-links">Reviving Retro PCs</a>
+                <p class="text-2">What happens when old PCs are given modern upgrades?</p>
+            </div>
+        </div>
+        <div class="container-3">
+            <div class="box-3">
+                <img src="images/image-top-laptops.jpg" class="images-notices" alt="Top laptops">
+            </div>
+            <div class="box-3">
+                <p class="number">02</p>
+                <a href="#section-2" class="notices-links">Top 10 Laptops of 2024</a>
+                <p class="text-2">Our best picks for various needs and budgets.</p>
+            </div>
+        </div>
+        <div class="container-3">
+            <div class="box-3">
+                <img src="images/image-gaming-growth.jpg" class="images-notices" alt="Growth of gaming">
+            </div>
+            <div class="box-3">
+                <p class="number">03</p>
+                <a href="#section-2" class="notices-links">The Growth of Gaming</a>
+                <p class="text-2">How the pandemic has sparked fresh opportunities.</p>
+            </div>
+        </div>
+    </div>
+    <section id="section-2">
+
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var menuToggle = document.getElementById('menuToggle');
+            var mobileMenu = document.getElementById('mobileMenu');
+            var closeBtn = document.getElementById('closeBtn');
+
+            menuToggle.addEventListener('click', function () {
+                mobileMenu.style.display = 'block';
+            });
+
+            closeBtn.addEventListener('click', function () {
+                mobileMenu.style.display = 'none';
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+        var webImage = document.getElementById('web-image');
+
+        function setWebImage() {
+            if (window.innerWidth <= 768) {
+                webImage.src = 'images/image-web-3-mobile.jpg';
+            } else {
+                webImage.src = 'images/image-web-3-desktop.jpg';
+            }
+        }
+        setWebImage();
+        window.addEventListener('resize', setWebImage);
+    });
+    </script>
+</body>
+
+</html>

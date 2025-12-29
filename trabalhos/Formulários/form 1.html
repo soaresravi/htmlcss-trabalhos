@@ -1,0 +1,49 @@
+<html>
+<head>
+      
+    <link rel="stylesheet" type="text/css" href="css.css">
+
+</head>
+
+<body>
+    
+    <h1> Cadastro de funcionário</h1> <br>
+    
+    <form action="action_page.php" method="post">    
+    <div class="form-container">
+        <fieldset>
+        <legend> <b> Cadastro de funcionário </legend> <br>
+            <b> Nome completo:
+            <input type="text" name="nome"> <br> </br>
+            <b> CPF:
+            <input type="text" name="cpf"> <br> </br>
+            <b> Data de nascimento:
+            <input type="date" name="data"> <br> </br>
+            <b> Endereço:
+            <input type="text" name="endereco"> <br> </br>
+            <b> Email:
+            <input type="text" name="email"> <br> </br>
+            <b> Telefone:
+            <input type="text" name="telefone"> <br> <br>
+            
+            <b> Cargo pretendido:
+            <select name="cargo">
+                <option value="ceo"> CEO </option>
+                <option value="presidente"> Presidente </option>
+                <option value="diretor"> Diretor </option>
+                <option value="gerente"> Gerente </option>
+                <option value="coordenador"> Coordenador </option>
+                <option value="analista"> Analista </option>
+                <option value="assistente"> Assistente </option>
+                <option value="auxliar"> Auxiliar </option>
+            </select> <br> </br>
+
+            <b> Experiência profisional: <br> </br>
+            <textarea name="experiencia" rows="10" cols="30"> Digite aqui sua experiência profissional. </textarea> <br> </br>
+            Envie seu currículo: <b>
+            <input type="submit" value="Escolher ficheiro"> <br> </br>
+            <input type="submit" value="Cadastrar" class="cadastro">
+        </fieldset>
+    </form>
+</body>
+</html>

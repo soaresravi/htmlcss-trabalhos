@@ -1,0 +1,41 @@
+h1 {
+	font-size: 25px;
+	color: blue;
+}
+
+.nome1 {
+	font-size: 18px;
+}	
+
+
+form {
+	margin: auto;
+	padding: 20px;
+	max-width: 700px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+	background-color: #f2f2f2;
+}
+
+body {
+	font-family: arial;
+	font-size: 13px;
+}	
+
+input[type=text], textarea, select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro {
+	background-color: green;
+	font-size: 18px;
+	color: white;
+	border: none;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}	

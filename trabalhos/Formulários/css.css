@@ -1,0 +1,20 @@
+form {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro {
+    background-color: #58ba44;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
